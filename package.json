@@ -1,0 +1,15 @@
+{
+  "name": "crave-24roots",
+  "version": "1.0.0",
+  "description": "Crave × 24 Roots — underground slow bar, Kokapet. Python (Flask) backend + vanilla JS frontend.",
+  "private": true,
+  "scripts": {
+    "setup": "python -m pip install -r backend/requirements.txt",
+    "migrate": "python backend/scripts/migrate.py",
+    "start": "python backend/run.py",
+    "dev": "python backend/run.py"
+  },
+  "engines": {
+    "python": ">=3.10"
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" role="img" aria-label="Crave — 24 Roots">
+  <rect width="96" height="96" rx="22" fill="#3F5138"/>
+  <!-- martini glass outline (from the Crave logo) -->
+  <g stroke="#F7F1E6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M28 26 L 68 24.5 L 48 51 Z"/>
+    <path d="M48 51 L 48 66"/>
+    <path d="M38 68 Q 48 65.5 58 68"/>
+  </g>
+  <!-- pink drink -->
+  <path d="M32 30 L 64 28.7 L 48 47 Z" fill="#F2A9A0"/>
+  <!-- cherry -->
+  <circle cx="51" cy="34" r="3.4" fill="#8F2A24"/>
+  <path d="M51 31 Q 53 27 56 26" stroke="#F7F1E6" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- "24" roots badge -->
+  <circle cx="70" cy="68" r="14" fill="#C17F42"/>
+  <text x="70" y="73.5" text-anchor="middle" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#FFFDF8">24</text>
+  <!-- little roots -->
+  <path d="M22 74 q 3 -4 6 0 M28 78 q 3 -4 6 0" stroke="#E9D2AA" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crave × 24 Roots — Underground Slow Bar, Kokapet</title>
+  <meta name="description" content="24 Roots — Hyderabad's underground slow-bar café in Kokapet. Small-batch espresso, cold brews, matcha and an all-day kitchen. Order online, reserve a table." />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#/" class="brand" data-link>
+        <img src="/assets/crave-mark.svg" alt="Crave × 24 Roots" class="brand-mark" />
+        <span class="brand-text">
+          <span class="brand-crave">Crave</span>
+          <span class="brand-sub">× 24 Roots · Kokapet</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#/" data-link data-nav="home">Home</a>
+        <a href="#/menu" data-link data-nav="menu">Menu</a>
+        <a href="#/gallery" data-link data-nav="gallery">Gallery</a>
+        <a href="#/visit" data-link data-nav="visit">Visit</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#/order" data-link class="cart-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><path d="M6 7h12l-1.2 12.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-count" id="cartCount" hidden>0</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#/" data-link>Home</a>
+    <a href="#/menu" data-link>Menu</a>
+    <a href="#/gallery" data-link>Gallery</a>
+    <a href="#/visit" data-link>Visit</a>
+  </div>
+
+  <!-- ================= APP ROOT ================= -->
+  <main id="app"></main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/crave-mark.svg" alt="" width="44" height="44" />
+        <p class="footer-tag">Coffee down to the root.</p>
+        <p class="footer-note">Crave presents 24 Roots — an underground slow bar in Kokapet, Hyderabad.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#/menu" data-link>Menu</a>
+        <a href="#/gallery" data-link>Gallery</a>
+        <a href="#/reserve" data-link>Reserve a table</a>
+        <a href="#/track" data-link>Track order</a>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Sy.No 166/3, near Ocean Park<br/>Kokapet, Hyderabad 500075</p>
+        <p>Daily · 12 PM – 11 PM</p>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="https://www.instagram.com/the24roots/" target="_blank" rel="noopener">Instagram · @the24roots</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=24+Roots+Cafe+Kokapet+Hyderabad" target="_blank" rel="noopener">Google Maps ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 Crave × 24 Roots. Crafted slow, served fresh.</span>
+        <span id="footerStatus" class="footer-status"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= CART DRAWER ================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your cart" hidden>
+    <div class="drawer-head">
+      <h3>Your order</h3>
+      <button class="icon-btn" id="drawerClose" aria-label="Close">✕</button>
+    </div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <div class="drawer-foot" id="drawerFoot"></div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/store.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/pages.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
