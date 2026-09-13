@@ -69,7 +69,7 @@
             <ul class="feature-list">
               <li><span class="tick">✓</span> 18-hour cold brew on tap, brewed in-house</li>
               <li><span class="tick">✓</span> Ceremonial-grade matcha, whisked to order</li>
-              <li><span class="tick">✓</span> All-day kitchen — from truffle toast to baos</li>
+              <li><span class="tick">✓</span> All-day brunch — from truffle toast to baos</li>
               <li><span class="tick">✓</span> Free WiFi, laptops welcome till evening</li>
             </ul>
           </div>
@@ -108,7 +108,7 @@
         <div class="container visit-grid">
           <div class="visit-card reveal">
             <h3>🕐 Hours</h3>
-            <p>Every day<br /><strong>12:00 PM – 11:00 PM</strong><br />Kitchen closes 10:30 PM</p>
+            <p>Every day<br /><strong>8:00 AM – 11:00 PM</strong><br />Kitchen closes 10:30 PM</p>
           </div>
           <div class="visit-card reveal">
             <h3>📍 Find us</h3>
@@ -185,7 +185,7 @@
       <section class="page-hero">
         <div class="container">
           <h1>The Menu</h1>
-          <p>Slow bar, espresso bar and an all-day kitchen — everything made to order.</p>
+          <p>Slow bar, specialty coffee and all-day brunch — everything made to order.</p>
         </div>
       </section>
       <section class="section">
@@ -308,7 +308,7 @@
             </div>
             <div class="visit-card reveal">
               <h3>🕐 Hours</h3>
-              <p>Monday – Sunday<br /><strong>12:00 PM – 11:00 PM</strong></p>
+              <p>Monday – Sunday<br /><strong>8:00 AM – 11:00 PM</strong></p>
               <p style="margin-top:0.4rem">${cafe.status.open_now ? '✅ Open right now' : '🌙 Closed right now'}</p>
             </div>
             <div class="visit-card reveal">
@@ -343,7 +343,7 @@
             <div class="field"><label for="rDate">Date</label><input id="rDate" type="date" required min="${today}" value="${today}" /></div>
             <div class="field"><label for="rTime">Time</label>
               <select id="rTime" required>
-                ${['12:30', '13:00', '13:30', '14:00', '16:00', '16:30', '17:00', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00']
+                ${['08:30', '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '16:00', '16:30', '17:00', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00']
                   .map((t) => `<option value="${t}">${t}</option>`)
                   .join('')}
               </select>

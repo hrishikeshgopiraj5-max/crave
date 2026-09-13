@@ -15,7 +15,7 @@ FRONTEND_DIR = os.path.join(PROJECT_ROOT, "frontend")
 DATABASE_DIR = os.path.join(PROJECT_ROOT, "database")
 
 TEMPLATE_REPLIES = {
-    "timing": "We're open 12:00 PM – 11:00 PM, every day of the week.",
+    "timing": "We're open 8:00 AM – 11:00 PM, every day of the week.",
     "location": "You'll find us at Sy.No 166/3, Ground Floor, near Ocean Park, Kokapet, Hyderabad 500075 — the underground slow-bar just off the main road.",
     "menu": "Our slow bar pours cold brews, matchas and signature espresso drinks, plus an all-day kitchen. Tap the Menu page for the full list with prices.",
     "reservation": "Reservations are open! Use the Reserve page to pick your date, time and party size — we'll keep a table ready.",

@@ -9,10 +9,10 @@ Flask (Python) API serving the 24 Roots café website. SQLite storage, zero exte
 | `run.py`                | Entry point. Reads `CRAVE_PORT` (default 5000). |
 | `app/__init__.py`       | App factory: registers blueprints, CORS, static frontend serving, SPA fallback, JSON error handlers. |
 | `app/db.py`             | SQLite connection per-request (`g`), schema bootstrap from `database/schema.sql`, `query_db` / `execute_db` helpers. |
-| `app/seed.py`           | Idempotent seed: café profile (real 24 Roots data), 4 menu categories, 23 items, 3 offers, 4 reviews. |
+| `app/seed.py`           | Idempotent seed: café profile (real 24 Roots data), 4 menu categories, 23 items, 3 offers, 4 reviews. Hours and category names follow the official @the24roots bio (8 AM – 11 PM daily). |
 | `app/routes/menu.py`    | Menu endpoints + the IST open/closed calculator (`cafe_status`) shared by other routes. |
 | `app/routes/orders.py`  | Order placement with server-side pricing, promo validation, 5% GST, and a time-based kitchen simulation (`placed → preparing → ready → completed`). |
-| `app/routes/reservations.py` | Table bookings: party size 1–12, future times only, inside 12:00–22:30 window, `RSV-` codes. |
+| `app/routes/reservations.py` | Table bookings: party size 1–12, future times only, inside 08:00–22:30 window, `RSV-` codes. |
 | `app/routes/info.py`    | Café profile, offers, reviews (GET + POST). |
 | `scripts/migrate.py`    | Standalone schema runner (`--reset` to wipe). |
 

@@ -45,7 +45,7 @@ def create_reservation():
     if not 1 <= party <= 12:
         return jsonify({"ok": False, "error": "Party size must be between 1 and 12"}), 400
 
-    # must be within opening hours (12:00–23:00 IST) and in the future
+    # must be within opening hours (08:00–23:00 IST) and in the future
     info = query_db("SELECT opens_at, closes_at FROM cafe_info WHERE id = 1", one=True)
     minutes = dt.hour * 60 + dt.minute
     if info:
@@ -53,7 +53,7 @@ def create_reservation():
             h, m = hhmm.split(":")
             return int(h) * 60 + int(m)
         if not (to_min(info["opens_at"]) <= minutes < to_min(info["closes_at"]) - 30):
-            return jsonify({"ok": False, "error": "Please pick a time between 12:00 PM and 10:30 PM"}), 400
+            return jsonify({"ok": False, "error": "Please pick a time between 8:00 AM and 10:30 PM"}), 400
 
     if dt < datetime.now() - timedelta(minutes=5):
         return jsonify({"ok": False, "error": "Reservation time is in the past"}), 400
